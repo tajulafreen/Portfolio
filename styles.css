@@ -7,43 +7,30 @@ body {
   background-color: #fff;
 }
 
-.nav {
-  display: block;
+.navbar {
   height: 70px;
-  margin: 15px;
-  padding: 0;
-  top: 0;
-  width: 96%;
+  width: auto;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 15px;
+.nav {
+  display: flex;
+  height: 30px;
+  margin: 30px 5px;
+  width: 90%;
+  flex-direction: row-reverse;
 }
 
-.logo {
-  height: 45px;
-  width: 7%;
-  float: left;
-  color: #36b37e;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.menubar .fa-bars {
-  float: right;
-  font-size: 30px;
-  margin-right: 1.5%;
-  color: #000;
+.fa-bars {
+  font-size: 50px;
+  margin: 25px;
 }
 
 .flexcontainer {
-  height: 80%;
   display: flex;
-  margin: 65px 2px;
+  background-image: url(./background.png);
+  background-image: 780px;
   flex-direction: column;
-  width: 100%;
+  width: 96%;
   align-items: center;
 }
 
@@ -59,6 +46,11 @@ ul {
   font-weight: 700;
   font-size: 35px;
   text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
 }
 
 .heading h1 {
@@ -83,13 +75,13 @@ ul {
 
 .socialmediaicons {
   height: 2%;
-  width: 40%;
+  width: 60%;
   align-self: center;
-  font-size: 20px;
-  margin-left: 35%;
+  font-size: 24px;
+  margin-left: 10%;
 }
 
 .fa {
   color: #505f79;
-  margin: 0% 0.5%;
+  margin: 0 10px;
 }
