@@ -21,8 +21,9 @@ body {
 }
 
 .fa-bars {
-  font-size: 50px;
-  margin: 25px;
+  font-weight: 100;
+  font-size: 30px;
+  width: 25px;
 }
 
 .flexcontainer {
