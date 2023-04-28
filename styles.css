@@ -28,7 +28,7 @@ body {
 .flexcontainer {
   display: flex;
   background-image: url(./background.png);
-  background-image: 780px;
+  background-size: 360px 623px;
   flex-direction: column;
   width: 96%;
   align-items: center;
