@@ -86,3 +86,27 @@ ul {
   color: #505f79;
   margin: 0 10px;
 }
+
+.seebutton {
+    height: 40px;
+    width: 40px;
+    margin-left: 1px;
+    margin-top: 40px;
+}
+
+
+.second {
+    width: 86%;
+    justify-content: center;
+  height: 97px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 52px;
+align-items: center;
+text-align: center;
+color: #172B4D;
+margin: 60px 35px;
+
+}
