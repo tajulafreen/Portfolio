@@ -5,6 +5,7 @@ body {
   width: 381px;
   height: 6351px;
   background-color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar {
@@ -158,13 +159,13 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 5px;
   gap: 20px;
   width: 329px;
   height: 32px;
 }
 
-label {
+.label-project {
   background-color: #ebf0ee;
   color: #3a4a42;
 }
@@ -174,16 +175,61 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  padding: 12px;
+  gap: 10px;
   width: 122px;
   height: 48px;
-  color: #fff;
+  bottom: 8px;
   background: #36b37f;
   border-radius: 4px;
 }
 
 .see-button {
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.see-post :link,
+.see-post:visited,
+.see-button:hover {
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  background: #36b37f;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.see-post:link,
+.see-post:visited,
+.see-post:hover {
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  background: #36b37f;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.see-post:active {
+  background: #008552;
 }
 
 .grid-container-another {
@@ -203,8 +249,8 @@ label {
   justify-content: center;
   padding: 12px 20px;
   color: #172b4d;
-  background-image: url(./illustration-\ about\ me-\ mobile@2x.png);
-  background-size: 351px 371px;
+  background-image: url(./background.png);
+  background-size: 500px 838px;
 }
 
 .about {
@@ -213,14 +259,14 @@ label {
 }
 
 .about-myself {
-  margin-top: 1px;
-  font-size: 20px;
-  font-weight: 400;
+  width: 351px;
+  height: 194px;
   font-style: normal;
-  gap: 2px;
-  height: 150px;
-  width: 330px;
-  padding-left: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
 
 .get-my-resume {
@@ -228,12 +274,33 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 150px;
+  padding: 12px;
+  gap: 10px;
+  width: 153px;
   height: 48px;
-  color: #fff;
   background: #36b37f;
   border-radius: 4px;
+  color: #fff;
+}
+
+.get-my-resume:link,
+.get-my-resume:visited,
+.get-my-resume:hover {
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  background: #36b37f;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.get-my-resume:active {
+  background: #008552;
 }
 
 .resume {
@@ -272,87 +339,14 @@ label {
   flex-flow: row;
   height: 120px;
   width: 270px;
-  column-gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
+  column-gap: 10px;
+  align-content: space-around;
 }
 
 .mini-item {
   background-color: #fff;
   height: 20px;
   color: #36b37e;
-  justify-content: space-between;
+  padding-left: 5px;
   width: fit-content;
-}
-
-.cli {
-  margin-left: 10px;
-}
-
-.interested {
-  width: 300px;
-  height: 363px;
-  padding: 20px 30px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
-}
-
-input[type=text] {
-  height: 48px;
-  width: 300px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-}
-
-input[type=submit] {
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-textarea {
-  height: 100px;
-  width: 276px;
-  border: 1px solid #04aa6d;
-  border-radius: 4px;
-  padding: 12px;
-}
-
-.container {
-  border-radius: 5px;
-  color: #172b4d;
-  padding: 20px;
-}
-
-.getintouch {
-  margin: 10px 90px 24px 90px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 48px;
-  color: #fff;
-  background: #36b37f;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.emails {
-  color: #42526e;
-  padding-left: 70px;
-  padding-right: 20px;
-  font-size: 18px;
 }
