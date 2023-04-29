@@ -197,8 +197,7 @@ ul {
 }
 
 .see-post :link,
-.see-post:visited,
-.see-button:hover {
+.see-post:visited {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
@@ -210,6 +209,10 @@ ul {
   display: inline-block;
   border-radius: 4px;
   margin: 0 auto;
+}
+
+.see-button:hover {
+  color: #36b37f;
 }
 
 .see-post:link,
@@ -247,10 +250,19 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px 20px;
+  padding: 10px 20px;
   color: #172b4d;
-  background-image: url(./background.png);
-  background-size: 500px 838px;
+}
+
+.right {
+  margin-left: 200px;
+  padding: -5px;
+  padding-left: 100px;
+}
+
+.left {
+  margin-right: 270px;
+  padding-top: -70px;
 }
 
 .about {
@@ -284,8 +296,7 @@ ul {
 }
 
 .get-my-resume:link,
-.get-my-resume:visited,
-.get-my-resume:hover {
+.get-my-resume:visited {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
@@ -297,6 +308,10 @@ ul {
   display: inline-block;
   border-radius: 4px;
   margin: 0 auto;
+}
+
+.get-my-resume:hover {
+  background-color: #36b37e;
 }
 
 .get-my-resume:active {
@@ -334,19 +349,63 @@ ul {
   margin-top: 10px;
 }
 
+.mini-flex-container-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 278px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.mini-flex-container-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 278px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 20px;
+}
+
 .mini-flex-container {
   display: flex;
-  flex-flow: row;
-  height: 120px;
-  width: 270px;
-  column-gap: 10px;
-  align-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 278px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 20px;
 }
 
 .mini-item {
   background-color: #fff;
-  height: 20px;
+  height: 40px;
   color: #36b37e;
+  padding-top: -4px;
   padding-left: 5px;
-  width: fit-content;
+  border-radius: 8px;
+  margin-left: 2px;
+}
+
+.mini-item p {
+  font-size: small;
+  padding-top: -4px;
+  margin: 12px 12px;
+}
+
+.mini-flex-container .mini-item p {
+  margin-left: 0;
 }
