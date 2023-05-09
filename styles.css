@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
-  width: 381px;
+  width: 375px;
   height: 6351px;
   background-color: #fff;
   font-family: "Inter", sans-serif;
@@ -15,7 +16,7 @@ body {
 .nav {
   display: flex;
   height: 30px;
-  margin: 30px 5px;
+  margin: 30px ;
   width: 90%;
   flex-direction: row-reverse;
 }
@@ -23,7 +24,9 @@ body {
 .fa-bars {
   font-weight: 100;
   font-size: 30px;
-  width: 25px;
+  width: 35px;
+  cursor: pointer;
+  
 }
 
 .flexcontainer {
@@ -174,7 +177,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
+  padding: 12px 16px;
   gap: 10px;
   width: 122px;
   height: 48px;
@@ -182,6 +185,7 @@ ul {
   background: #36b37f;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .see-button {
@@ -194,10 +198,13 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  
 }
 
-.see-post :link,
-.see-post:visited {
+.see-button:link,
+.see-button:visited
+.see-post:hover
+  {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
@@ -209,26 +216,7 @@ ul {
   display: inline-block;
   border-radius: 4px;
   margin: 0 auto;
-}
-
-.see-button:hover {
-  color: #36b37f;
-}
-
-.see-post:link,
-.see-post:visited,
-.see-post:hover {
-  font-weight: 500;
-  line-height: 2.4rem;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.8rem 1.2rem;
-  background: #36b37f;
-  display: inline-block;
-  border-radius: 4px;
-  margin: 0 auto;
+  
 }
 
 .see-post:active {
@@ -294,6 +282,7 @@ ul {
   border-radius: 4px;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .get-my-resume:link,
@@ -407,6 +396,6 @@ ul {
   margin: 12px 12px;
 }
 
-.mini-flex-container .mini-item {
+.mini-flex-container .mini-item p {
   margin-left: 0;
 }
