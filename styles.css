@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body {
   width: 381px;
@@ -410,4 +409,5 @@ ul {
 
 .mini-flex-container .mini-item p {
   margin-left: 0;
+  padding: 2rem;
 }
