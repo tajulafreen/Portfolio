@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body {
   width: 375px;
@@ -16,7 +15,7 @@ body {
 .nav {
   display: flex;
   height: 30px;
-  margin: 30px ;
+  margin: 30px;
   width: 90%;
   flex-direction: row-reverse;
 }
@@ -26,7 +25,6 @@ body {
   font-size: 30px;
   width: 35px;
   cursor: pointer;
-  
 }
 
 .flexcontainer {
@@ -198,13 +196,10 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  
 }
 
 .see-button:link,
-.see-button:visited
-.see-post:hover
-  {
+.see-button:visited .see-post:hover {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
@@ -216,7 +211,6 @@ ul {
   display: inline-block;
   border-radius: 4px;
   margin: 0 auto;
-  
 }
 
 .see-post:active {
@@ -398,4 +392,55 @@ ul {
 
 .mini-flex-container .mini-item p {
   margin-left: 0;
+}
+
+.contact-text {
+  width: 327px;
+  height: 363px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  padding-left: 15px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-left: 0px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.form-item {
+  height: 48px;
+  width: 327px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #d0d9d4;
+  color: #6b778c;
+}
+
+.message {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #42526e;
+  background: #ffffff;
+  height: 114px;
+  width: 327px;
+  border: 1px solid #60c095;
+  border-radius: 4px;
 }
