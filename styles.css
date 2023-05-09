@@ -407,7 +407,6 @@ ul {
   margin: 12px 12px;
 }
 
-.mini-flex-container .mini-item p {
+.mini-flex-container .mini-item {
   margin-left: 0;
-  padding: 2rem;
 }
