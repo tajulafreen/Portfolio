@@ -444,3 +444,86 @@ ul {
   border: 1px solid #60c095;
   border-radius: 4px;
 }
+.contact-button {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px;
+margin-left: 123px;
+margin-right: 129px;
+width: 129px;
+height: 48px;
+background: #36B37F;
+border-radius: 4px;
+border-style: none;
+cursor: pointer;
+}
+.contact-btn-txt{
+width: 105px;
+height: 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.contact-button:link,
+.contact-button:visited {
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  background: #36b37f;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.contact-button:hover {
+  background-color: #36b37e;
+}
+
+.contact-button:active {
+  background: #008552;
+}
+
+.contact-right {
+  height: 131.70988202068884px;
+  width: 50px;
+  position: absolute;
+   left: 85%;
+
+}
+.my-email {
+  
+  width: 381px;
+height: 38px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+text-align: center;
+color: #42526E;
+position: absolute;
+margin-top: 31px;
+text-decoration: none;
+}
+.footer {
+  margin-top: 100px;
+}
+.end {
+  width: 134px;
+height: 5px;
+background: #0D151E;
+border-radius: 10px;
+margin-top: 40px;
+margin-bottom: 10px;
+margin-left: 35%;
+}
