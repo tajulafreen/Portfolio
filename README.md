@@ -49,9 +49,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[font-styles]**
-- **[font-icons]**
 
+- [x] **Font-styles**
+- [x] **Portfolio Home**
+- [x] **About**
+- [x] **Work Templates**
+- [x] **Contact Form**
+- [x] **Responsive**
+- [x] **MIT Liscence**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,6 +145,8 @@ If you like this project don't forget to give stars.
 
 This project is [MIT](./LICENSE) licensed.
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank Microverse for the opportunity to work on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
