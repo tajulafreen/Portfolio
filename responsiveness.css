@@ -10,7 +10,14 @@
     display: none;
     visibility: hidden;
   }
-
+ .heading {
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    width: 96%;
+ }
   .seebutton {
     display: none;
   }
