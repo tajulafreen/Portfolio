@@ -6,15 +6,20 @@ body {
   background-color: #fff;
   font-family: "Inter", sans-serif;
 }
+
 .desktop {
   visibility: hidden;
 }
-.desk-con-center,.desk-con-left,
-.desk-con-right,.desktop-left,
-.desktop-right{
-  height: 0px;
-  width: 0px;
+
+.desk-con-center,
+.desk-con-left,
+.desk-con-right,
+.desktop-left,
+.desktop-right {
+  height: 0;
+  width: 0;
 }
+
 .navbar {
   height: 70px;
   width: auto;
@@ -91,7 +96,6 @@ ul {
   font-size: 24px;
   margin-left: 29%;
   margin-right: 33%;
-
 }
 
 .fa {
@@ -242,21 +246,19 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: -23px 20px 20px 0px;
+  margin: -23px 20px 20px 0;
   color: #172b4d;
-  
 }
 
 .right {
   margin-left: 80%;
   margin-bottom: -30%;
-  
 }
 
 .left {
   margin-right: 85%;
-margin-top: -18%;
-margin-bottom: 9%;
+  margin-top: -18%;
+  margin-bottom: 9%;
 }
 
 .about {
@@ -511,10 +513,10 @@ margin-bottom: 9%;
 
 .contact-right {
   height: 131.70988202068884px;
-width: 57px;
-position: absolute;
-margin-left: 80%;
-margin-top: -10%;
+  width: 57px;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: -10%;
 }
 
 .my-email {
