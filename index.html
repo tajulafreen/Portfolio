@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,15 +17,26 @@
 </head>
 
 <body>
-    
-    <header class="navbar">
+    <div class="head-desktop-bg ">
+        
+    <header class="navbar section">
     <nav class="nav">
-    <span><i class="fa fa-bars"></i></span>
+    <span><i class="fa fa-bars mobile"></i></span>
+
+    <!--------------- Desktop ------------------->
+    <ul class="navbar-link desktop">
+     <li><a href="#flexcontainer" class="navbar-item">Portfolio</a></li>
+     <li><a href="#about-me" class="navbar-item">About Me</a></li>
+     <li><a href="#form-contact" class="navbar-item">Contact</a></li>
+    </ul>
+
+        <!--------------- Desktop ------------------->
  </nav>
  </header>
  
 <section>
-<div class="flexcontainer">
+<div class="flexcontainer section" id="flexcontainer">
+    
     <div class="flexitem heading"><h1>Hey there. I’m Afreen.<br><b>I’m a software developer.</b></h1></div>
     <div class="flexitem paragraph"><p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
         don’t hesitate to contact me.</p></div>
@@ -36,15 +48,16 @@
      <a href="https://www.google.com"><i class="fa fa-google"></i></a>
     </li>
     </ul>
-   
+</div>
         <img class="seebutton" src="./Disabled.png" alt="button">
     
-</div>
+
 </section>
+    
 <section>
-    <div class="second-header">
-        <h2 class="second">My Recent work</h2>
-        <img src="./Indicator.png" alt="indicator">
+    <div class="second-header section">
+        <h2 class="second">My Recent Works</h2>
+        <img class="mobile" src="./Indicator.png" alt="indicator">
     </div>
     <div class="grid-container">
         <div class="grid-item first">
@@ -129,17 +142,24 @@
 </section>
 <section>
    
-        <div class="about-me">
+        <div class="about-me section" id="about-me">
             
-            <img class="right" src="./right.png" alt="image">  
+            <img class="right mobile" src="./right.png" alt="image">  
             <h2 class="about">About Me</h2>
             
             <p class="about-myself"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hesitate to contact me.</p>
                
-                <button class="get-my-resume"><p class="resume">Get My Resume</p></button>
-               <img class="left" src="./left.png" alt="image"> 
+                <button class="get-my-resume"><p class="resume">Get my resume</p></button>
+               <img class="left mobile" src="./left.png" alt="image"> 
+               <img class="desktop-right  desktop" src="./desk-abou-right.png" alt="beautiful image"> 
         </div>
+        <!---------------- Desktop -------------------->
+
+<img class="desktop-left  desktop" src="./desk-abou-left.png" alt="beautiful image">
+
+
+<!---------------- Desktop -------------------->
          <div class="grid-container-another">
         <div class="grid-item-another">
             <img class="skills languagelogo" src="./icon-languages@2x.png" alt="language logo">
@@ -179,12 +199,14 @@
     
         
 </section>
+ 
+<section class="contact-section section">
 
-<section class="contact-section">
     <h3 class="contact-text">
         I'm always interested in hearing about new projects, so if you'd
         like to chat please get in touch.</h3>
 <form
+id="form-contact"
 class="form-contact"
 action="https://formspree.io/f/xlekzylq"
 method="POST"
@@ -219,11 +241,21 @@ method="POST"
 </ul>
 <button class="contact-button" type="submit"><p class="contact-btn-txt">Get in touch</p></button>
 
-<a class="my-email" href="affushaik9493@gmail.com" class="my-email">affushaik9493@gmail.com</a>
-<img class="contact-right" src="./contact-right.png" alt="beatiful-images">
+
+<a class="my-email mobile" href="affushaik9493@gmail.com" class="my-email">affushaik9493@gmail.com</a>
+<img class="contact-right mobile" src="./contact-right.png" alt="beatiful-images">
+
 </form>
+
 </section>
-  <footer class="footer">
+<!-- !-----------Desktop -------------> 
+
+<img class="desk-con-left  desktop" src="./contact-desk-left.png" alt="beautiful image">
+<img class="desk-con-center  desktop" src="./desk-center.png" alt="beautiful image">
+<img class="desk-con-right  desktop" src="./contact-desk-rit.png" alt="beautiful image">
+ <!-------------- Desktop ------------->
+  <footer class="footer section">
+    
     <ul class="flexitem socialmediaicons">
         <li><a href="https://www.twitter.com/tajulafreen"><i class="fa fa-twitter"></i></a></li>
         <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
@@ -232,7 +264,7 @@ method="POST"
         <a href="https://www.google.com"><i class="fa fa-google"></i></a>
        </li>
        </ul>
-       <div class="end"></div>
+       <div class="end mobile"></div>
   </footer>
 
 </body>
