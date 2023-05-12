@@ -565,6 +565,9 @@ ul {
     height: 48px;
     width: 522px;
   }
+  .message {
+    height: 224px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -784,7 +787,7 @@ ul {
     width: 55%;
     height: 330px;
   }
-
+   
   .contact-button {
     margin-left: 11%;
   }
