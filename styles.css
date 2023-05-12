@@ -147,7 +147,10 @@ ul {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
-
+.grid-item:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
 .item {
   width: 100%;
   background-color: #ebf0ee;
@@ -210,6 +213,11 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+.see-post:hover {
+  background-color: #60C095;
+  transition: all 0.5s ease;
 }
 
 .see-post:active {
