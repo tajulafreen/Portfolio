@@ -216,7 +216,7 @@ ul {
 }
 
 .see-post:hover {
-  background-color: #60C095;
+  background-color: #60c095;
   transition: all 0.5s ease;
 }
 
@@ -300,6 +300,11 @@ ul {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.get-my-resume:hover {
+  background-color: #60c095;
+  transition: all 0.5s ease;
 }
 
 .get-my-resume:link,
@@ -509,6 +514,11 @@ ul {
 
 .contact-button:active {
   background: #008552;
+}
+
+.contact-button:hover {
+  background-color: #60c095;
+  transition: all 0.5s ease;
 }
 
 .contact-right {
