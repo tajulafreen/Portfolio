@@ -575,6 +575,9 @@ ul {
     height: 48px;
     width: 522px;
   }
+  .message {
+    height: 224px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -590,7 +593,7 @@ ul {
   .desktop {
     visibility: visible;
   }
-
+  
   .head-desktop-bg {
     background-image: url(./desktop-bg.png);
     background-size: 100%;
