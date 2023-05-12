@@ -198,12 +198,13 @@ ul {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  
 }
+
 .see-post:hover {
   background-color: #60c095;
   transition: all 0.5s ease;
 }
+
 .see-button {
   font-style: normal;
   font-weight: 400;
@@ -221,7 +222,7 @@ ul {
 }
 
 .see-button:link,
-.see-button:visited  {
+.see-button:visited {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
