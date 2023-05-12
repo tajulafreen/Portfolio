@@ -147,10 +147,12 @@ ul {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
+
 .grid-item:hover {
   transform: scale(1.1);
   transition: 1s ease;
 }
+
 .item {
   width: 100%;
   background-color: #ebf0ee;
@@ -575,6 +577,7 @@ ul {
     height: 48px;
     width: 522px;
   }
+
   .message {
     height: 224px;
   }
@@ -593,7 +596,7 @@ ul {
   .desktop {
     visibility: visible;
   }
-  
+
   .head-desktop-bg {
     background-image: url(./desktop-bg.png);
     background-size: 100%;
