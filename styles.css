@@ -577,6 +577,9 @@ ul {
     height: 48px;
     width: 522px;
   }
+  .message {
+    height: 224px;
+  }
 }
 
 @media (min-width: 768px) {
