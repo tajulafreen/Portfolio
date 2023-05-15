@@ -148,6 +148,11 @@ ul {
   border-radius: 8px;
 }
 
+.grid-item:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
 .item {
   width: 100%;
   background-color: #ebf0ee;
@@ -212,12 +217,17 @@ ul {
   color: #fff;
 }
 
+.see-post:hover {
+  background-color: #60c095;
+  transition: all 0.5s ease;
+}
+
 .see-post:active {
   background: #008552;
 }
 
 .see-button:link,
-.see-button:visited .see-post:hover {
+.see-button:visited {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
@@ -294,6 +304,11 @@ ul {
   cursor: pointer;
 }
 
+.get-my-resume:hover {
+  background-color: #60c095;
+  transition: all 0.5s ease;
+}
+
 .get-my-resume:link,
 .get-my-resume:visited {
   font-weight: 500;
@@ -307,10 +322,6 @@ ul {
   display: inline-block;
   border-radius: 4px;
   margin: 0 auto;
-}
-
-.get-my-resume:hover {
-  background-color: #36b37e;
 }
 
 .get-my-resume:active {
@@ -503,12 +514,13 @@ ul {
   margin: 0 auto;
 }
 
-.contact-button:hover {
-  background-color: #36b37e;
-}
-
 .contact-button:active {
   background: #008552;
+}
+
+.contact-button:hover {
+  background-color: #60c095;
+  transition: all 0.5s ease;
 }
 
 .contact-right {
@@ -564,9 +576,6 @@ ul {
     margin-left: 1%;
     height: 48px;
     width: 522px;
-  }
-  .message {
-    height: 224px;
   }
 }
 
