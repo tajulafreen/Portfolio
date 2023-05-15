@@ -10,6 +10,7 @@
   "license": "ISC",
   "keywords": [],
   "devDependencies": {
+    "@hint/utils-dom": "^2.2.3",
     "hint": "^7.1.8",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
