@@ -840,6 +840,10 @@ ul {
     margin-right: 2%;
   }
 
+  .flexcontainer.active {
+    background-color: #67798e;
+  }
+
   .menu-section {
     position: absolute;
     display: flex;
@@ -847,7 +851,7 @@ ul {
     gap: 5%;
     left: 0;
     top: 60px;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     transition: 0.5s;
     height: 450px;
@@ -859,8 +863,8 @@ ul {
   .menu-section.active {
     height: 650px;
     opacity: 1;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
   }
 
   .menu-section.active a {
