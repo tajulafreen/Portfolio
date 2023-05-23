@@ -857,8 +857,9 @@ ul {
   }
 
   .menu-section.active {
-    height: 450px;
+    height: 650px;
     opacity: 1;
+    
   }
 
   .menu-section a {
