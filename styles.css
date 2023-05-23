@@ -859,10 +859,12 @@ ul {
   .menu-section.active {
     height: 650px;
     opacity: 1;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     
   }
 
-  .menu-section a {
+  .menu-section.active a {
     text-decoration: none;
     color: #2d3545;
     font-size: 40px;
