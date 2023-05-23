@@ -834,10 +834,11 @@ ul {
     margin-left: 86%;
   }
   .hamburger .line{
-    width: 30px;
+    width: 25px;
     height: 3px;
     background-color: #67798e;
     margin: 6px 0;
+    margin-right: 2%;
   }
   .menu-section{
     position: absolute;
