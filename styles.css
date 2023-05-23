@@ -580,10 +580,12 @@ ul {
     display: none;
     visibility: hidden;
   }
-   .menu-section{
+
+  .menu-section {
     visibility: hidden;
     display: none;
-   }
+  }
+
   .seebutton {
     display: none;
   }
@@ -864,11 +866,10 @@ ul {
   }
 
   .menu-section.active {
-    height: 100vh;
+    height: 700px;
     opacity: 1;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
-    position: fixed;
   }
 
   .menu-section.active a {
