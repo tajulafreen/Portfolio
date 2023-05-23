@@ -4,3 +4,7 @@ hambur.onclick = function myfunction() {
   menu.classList.toggle('active');
   hambur.classList.toggle('active');
 };
+document.querySelectorAll('.navbar-item').forEach((n) => n.addEventListener('click', () => {
+  hambur.classList.remove('active');
+  menu.classList.remove('active');
+}));
