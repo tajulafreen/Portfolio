@@ -30,14 +30,6 @@ body {
   height: 30px;
   margin: 30px;
   width: 90%;
-  flex-direction: row-reverse;
-}
-
-.fa-bars {
-  font-weight: 100;
-  font-size: 30px;
-  width: 35px;
-  cursor: pointer;
 }
 
 .flexcontainer {
@@ -58,7 +50,7 @@ body {
 
 .heading {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
   text-align: center;
   padding: 25px 20px 10px;
@@ -83,7 +75,7 @@ ul {
   width: 80%;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 32px;
   text-align: center;
   color: #172b4d;
@@ -106,7 +98,7 @@ ul {
 .seebutton {
   height: 40px;
   width: 40px;
-  margin-left: 1px;
+  margin-left: 40%;
   margin-top: 40px;
 }
 
@@ -559,7 +551,7 @@ ul {
   border-radius: 10px;
   margin-top: 40px;
   margin-bottom: 10px;
-  margin-left: 40%;
+  margin-left: 30%;
 }
 
 @media (min-width: 1020px) {
@@ -577,6 +569,7 @@ ul {
     height: 48px;
     width: 522px;
   }
+
   .message {
     height: 224px;
   }
@@ -586,6 +579,11 @@ ul {
   .mobile {
     display: none;
     visibility: hidden;
+  }
+
+  .menu-section {
+    visibility: hidden;
+    display: none;
   }
 
   .seebutton {
@@ -607,7 +605,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-left: 3%;
+    margin-left: 38%;
     margin-right: 32%;
     position: sticky;
   }
@@ -829,5 +827,91 @@ ul {
     margin-top: 9%;
     margin-right: 21%;
     margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 86%;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #67798e;
+    margin: 6px 0;
+    margin-right: 2%;
+  }
+
+  .flexcontainer.active {
+    background-color: #e5e5e5;
+    background-image: none;
+  }
+
+  .flexcontainer.active .flexitem {
+    visibility: hidden;
+  }
+
+  .hide.active {
+    visibility: hidden;
+    height: 0;
+    display: none;
+  }
+
+  .seebutton.active {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  .hider.active {
+    opacity: 0;
+    display: none;
+  }
+
+  .menu-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    left: 0;
+    top: 60px;
+    width: 90%;
+    background-color: #fff;
+    transition: 0.5s;
+    height: 90%;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 0;
+  }
+
+  .menu-section.active {
+    height: 900px;
+    opacity: 1;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 55px;
+  }
+
+  .menu-section.active a {
+    text-decoration: none;
+    color: #2d3545;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
