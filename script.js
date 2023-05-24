@@ -18,4 +18,5 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   nav.classList.remove('active');
   hide.classList.remove('active');
   see.classList.remove('active');
+  hider.classList.remove('active');
 }));
