@@ -921,6 +921,10 @@ ul {
   .pop-up-btn-box.desktop-only{
     display: none;
   }
+
+  .mobile-only .btn span {
+    font-size: 18px;
+  }
 }
 
 .pop-up {
