@@ -943,7 +943,7 @@ ul {
   }
 
   .mobile-only .btn span {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .pop-up-heading {
@@ -1006,7 +1006,7 @@ ul {
 
 .pop-up-technologies {
   display: flex;
-  gap: 8px;
+  gap: 5px;
 }
 
 .pop-up-technologies button {
@@ -1018,8 +1018,9 @@ ul {
 
 .pop-up-btn-box {
   display: flex;
-  gap: 2rem;
+  gap: 1.6rem;
   justify-content: flex-end;
+  justify-items: center;
 }
 
 .btn {
