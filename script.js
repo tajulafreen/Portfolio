@@ -33,7 +33,7 @@ const projectDetails = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
-      'https://tajulafreen.github.io/Portfolio/',
+      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
   // Project #2
   {
@@ -47,7 +47,7 @@ const projectDetails = [
     technologies: ['HTML', 'CSS', 'Tailwind'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
-      'https://tajulafreen.github.io/Portfolio/',
+      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
   {
     name: 'Keeping track of hundreds of components #3',
@@ -60,7 +60,7 @@ const projectDetails = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
-      'https://tajulafreen.github.io/Portfolio/',
+      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
   // Project #4
   {
@@ -74,7 +74,7 @@ const projectDetails = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
-      'https://tajulafreen.github.io/Portfolio/',
+      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
   // Project #5
   {
@@ -88,7 +88,7 @@ const projectDetails = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
-      'https://tajulafreen.github.io/Portfolio/',
+      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
   // Project #6
   {
@@ -102,7 +102,7 @@ const projectDetails = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
-      'https://tajulafreen.github.io/Portfolio/',
+      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
 ];
 
