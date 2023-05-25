@@ -122,7 +122,6 @@ const technologies = document.querySelector('.pop-up-technologies');
 
 // Functions
 const showPopUp = () => {
-  
   overlay.classList.toggle('hiddenn');
   popUpWindow.classList.remove('hidden');
   body.classList.add('hide-scroll');
