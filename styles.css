@@ -920,6 +920,9 @@ ul {
   .desktop-only {
     display: none;
   }
+  .pop-up-btn-box.desktop-only{
+    display: none;
+  }
 }
 
 .pop-up {
@@ -995,16 +998,11 @@ ul {
 
 .pop-up-btn-box {
   display: flex;
-  gap: 3rem;
-  justify-content: space-between;
+  gap: 2rem;
+  justify-content:flex-end;
 }
 
-.pop-up-btn-box .btn {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  
-}
+
 
 .btn { 
   background-color: #36b37e;
@@ -1041,7 +1039,7 @@ ul {
   }
 
   .pop-up-btn-box {
-    justify-content: end;
+    margin-top: -12%;
     
   }
 
