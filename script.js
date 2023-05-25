@@ -110,58 +110,59 @@ const projectDetails = [
 const projectButtons = document.querySelectorAll('.see-post');
 const overlay = document.querySelector('.overlay');
 const popUpWindow = document.querySelector('.pop-up');
-const closePopUpBtn = document.querySelector('.pop-up-close-btn');
-const livebtn = document.querySelector('.btn--seelive');
-const sourcebtn = document.querySelector('.btn--source');
-const body = document.querySelector('body');
+// const closePopUpBtn = document.querySelector('.pop-up-close-btn');
+// const livebtn = document.querySelector('.btn--seelive');
+// const sourcebtn = document.querySelector('.btn--source');
+// const body = document.querySelector('body');
 
 // Pop-up Variables
-const projectName = document.querySelector('.pop-up-heading');
-const description = document.querySelector('.pop-up-description');
-const technologies = document.querySelector('.pop-up-technologies');
-const deskbag = document.querySelector('.head-desktop-bg');
-const mobbag = document.querySelector('.flexcontainer');
+// const projectName = document.querySelector('.pop-up-heading');
+// const description = document.querySelector('.pop-up-description');
+// const technologies = document.querySelector('.pop-up-technologies');
+// const deskbag = document.querySelector('.head-desktop-bg');
+// const mobbag = document.querySelector('.flexcontainer');
 // Functions
-const showPopUp = () => {
-  overlay.classList.toggle('hiddenn');
-  deskbag.classList.toggle('hiddenn');
-  mobbag.classList.toggle('hiddenn');
-  popUpWindow.classList.remove('hidden');
-  body.classList.add('hide-scroll');
-};
+// const showPopUp = () => {
+//   overlay.classList.toggle('hiddenn');
+//   deskbag.classList.toggle('hiddenn');
+//   mobbag.classList.toggle('hiddenn');
+//   popUpWindow.classList.remove('hidden');
+//   body.classList.add('hide-scroll');
+// };
 
-const closePopUp = () => {
-  overlay.classList.remove('hiddenn');
-  deskbag.classList.remove('hiddenn');
-  mobbag.classList.remove('hiddenn');
-  popUpWindow.classList.add('hidden');
-  body.classList.remove('hide-scroll');
-};
+// const closePopUp = () => {
+//   overlay.classList.remove('hiddenn');
+//   deskbag.classList.remove('hiddenn');
+//   mobbag.classList.remove('hiddenn');
+//   popUpWindow.classList.add('hidden');
+//   body.classList.remove('hide-scroll');
+// };
 
 // Actions
-for (let i = 0; i < projectButtons.length; i += 1) {
-  projectButtons[i].addEventListener('click', () => {
-    const currentProject = projectDetails[i];
-    projectName.innerHTML = currentProject.name;
-    technologies.innerHTML = '';
-    description.innerHTML = '';
+// for (let i = 0; i < projectButtons.length; i += 1) {
+//   projectButtons[i].addEventListener('click', () => {
+//     const currentProject = projectDetails[i];
+//     const closePopUpBtn = document.createElement('img');
+//     // projectName.innerHTML = currentProject.name;
+//     // technologies.innerHTML = '';
+//     // description.innerHTML = '';
 
-    for (let n = 0; n < currentProject.technologies.length; n += 1) {
-      const tech = document.createElement('button');
-      tech.innerHTML = currentProject.technologies[n];
-      technologies.append(tech);
-    }
+//     for (let n = 0; n < currentProject.technologies.length; n += 1) {
+//       const tech = document.createElement('button');
+//       tech.innerHTML = currentProject.technologies[n];
+//       technologies.append(tech);
+//     }
 
-    for (let n = 0; n < currentProject.description.length; n += 1) {
-      const para = document.createElement('p');
-      para.innerHTML = currentProject.description[n];
-      description.append(para);
-    }
+//     for (let n = 0; n < currentProject.description.length; n += 1) {
+//       const para = document.createElement('p');
+//       para.innerHTML = currentProject.description[n];
+//       description.append(para);
+//     }
 
-    showPopUp();
-  });
-}
-closePopUpBtn.addEventListener('click', closePopUp);
+//     showPopUp();
+//   });
+// }
+// closePopUpBtn.addEventListener('click', closePopUp);
 
 livebtn.addEventListener('click', () => {
   window.open(projectDetails[0].live);
