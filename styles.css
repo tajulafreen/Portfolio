@@ -921,7 +921,16 @@ ul {
   .pop-up-btn-box.desktop-only{
     display: none;
   }
-
+  .pop-up-close-btn {
+    margin-right: -16px;
+    height: 2.0rem;
+    border-radius: 3px;
+    padding: 0px;
+      position: absolute;
+      top: 1.3%;
+      right: 4.6%;
+     
+  }
   .mobile-only .btn span {
     font-size: 18px;
   }
@@ -1045,15 +1054,13 @@ ul {
 
   .pop-up-close-btn {
     margin-right: -16px;
-   
     height: 2.4rem;
     border-radius: 3px;
     padding: 0px;
       position: absolute;
       top: 5.3%;
       right: 4.6%;
-      cursor: pointer;
-      
+     
   }
   .pop-up-heading {
     font-size: 3.2rem;
