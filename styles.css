@@ -914,4 +914,157 @@ ul {
   .hamburger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .pop-up {
+    width: 20rem;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+.pop-up {
+  scrollbar-gutter: stable;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: 95vh;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.pop-up-img-box {
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+.pop-up-hero-img {
+  width: 100%;
+}
+
+.pop-up-close-btn {
+  cursor: pointer;
+  background-color: #ebecf0;
+  float: right;
+}
+
+.pop-up-heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+  letter-spacing: 0;
+  text-align: left;
+  color: #172b4d;
+}
+
+.pop-up-technologies {
+  display: flex;
+  gap: 8px;
+}
+
+.pop-up-technologies button {
+  border-radius: 4px;
+  padding: 8px 12px 8px 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.pop-up-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.pop-up-description p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.pop-up-btn-box {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.pop-up-btn-box .btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  
+}
+
+.btn { 
+  background-color: #36b37e;
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+}
+.btn span {
+  font-size: 22px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 60%);
+  backdrop-filter: blur(5px);
+}
+
+.hidden {
+  display: none;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .pop-up {
+    width: 40rem;
+    padding: 5rem 2rem 3rem;
+  }
+
+  .pop-up-btn-box {
+    justify-content: end;
+    
+  }
+
+  .pop-up-close-btn {
+    margin-right: -16px;
+   
+    height: 2.4rem;
+    border-radius: 3px;
+    padding: 0px;
+      position: absolute;
+      top: 5.3%;
+      right: 4.6%;
+      cursor: pointer;
+      
+  }
+  .mobile-only{
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .pop-up {
+    width: 60rem;
+  }
+  
 }
