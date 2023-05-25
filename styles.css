@@ -914,9 +914,7 @@ ul {
   .hamburger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .pop-up {
-    width: 20rem;
-  }
+  
   .desktop-only {
     display: none;
   }
@@ -930,6 +928,7 @@ ul {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  width: 70%;
   gap: 0.6rem;
   position: fixed;
   top: 50%;
@@ -1001,8 +1000,6 @@ ul {
   justify-content:flex-end;
 }
 
-
-
 .btn { 
   background-color: #36b37e;
   color: white;
@@ -1033,7 +1030,7 @@ ul {
 
 @media (min-width: 768px) {
   .pop-up {
-    width: 40rem;
+  
     padding: 5rem 2rem 3rem;
     gap: 1.6rem;
   }
@@ -1060,9 +1057,3 @@ ul {
   }
 }
 
-@media (min-width: 950px) {
-  .pop-up {
-    width: 60rem;
-  }
-  
-}
