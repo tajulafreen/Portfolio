@@ -21,7 +21,6 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   hider.classList.remove('active');
 }));
 
-
 const projectDetails = [
   {
     name: 'Keeping track of hundreds of components #1',
@@ -159,10 +158,10 @@ for (let i = 0; i < projectButtons.length; i += 1) {
 }
 closePopUpBtn.addEventListener('click', closePopUp);
 
-livebtn.addEventListener('click', function live() {
+livebtn.addEventListener('click', () => {
   window.open(projectDetails[0].live);
 });
 
-sourcebtn.addEventListener('click', function source(){
+sourcebtn.addEventListener('click', () => {
   window.open(projectDetails[0].source);
 });
