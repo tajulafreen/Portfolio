@@ -918,17 +918,16 @@ ul {
   .desktop-only {
     display: none;
   }
+
   .pop-up {
-   
     width: 70%;
     top: 20%;
     left: 30%;
     height: 80vh;
     transform: translate(-50%, -50%);
     z-index: 100;
-   
   }
-  
+
   .pop-up-btn-box.desktop-only {
     display: none;
   }
