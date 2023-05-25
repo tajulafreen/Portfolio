@@ -1046,6 +1046,14 @@ ul {
   fill-opacity: inherit;
 }
 
+.head-desktop-bg.hiddenn {
+  display: none;
+}
+
+.flexcontainer.hiddenn {
+  display: none;
+}
+
 .hidden {
   display: none;
 }

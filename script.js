@@ -119,16 +119,21 @@ const body = document.querySelector('body');
 const projectName = document.querySelector('.pop-up-heading');
 const description = document.querySelector('.pop-up-description');
 const technologies = document.querySelector('.pop-up-technologies');
-
+const deskbag = document.querySelector('.head-desktop-bg');
+const mobbag = document.querySelector('.flexcontainer');
 // Functions
 const showPopUp = () => {
   overlay.classList.toggle('hiddenn');
+  deskbag.classList.toggle('hiddenn');
+  mobbag.classList.toggle('hiddenn');
   popUpWindow.classList.remove('hidden');
   body.classList.add('hide-scroll');
 };
 
 const closePopUp = () => {
   overlay.classList.remove('hiddenn');
+  deskbag.classList.remove('hiddenn');
+  mobbag.classList.remove('hiddenn');
   popUpWindow.classList.add('hidden');
   body.classList.remove('hide-scroll');
 };
