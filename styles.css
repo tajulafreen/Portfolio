@@ -925,6 +925,30 @@ ul {
   .mobile-only .btn span {
     font-size: 18px;
   }
+
+  .pop-up-heading {
+    font-size: 2.0rem;
+    font-weight: 600;
+  }
+  
+  .pop-up-technologies button {
+    
+    font-size: 1.0rem;
+    font-weight: 400;
+  }
+  
+  .pop-up-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  
+  .pop-up-description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    text-align: left;
+  }
 }
 
 .pop-up {
@@ -960,16 +984,7 @@ ul {
   background-color: #ebecf0;
   float: right;
 }
-
-.pop-up-heading {
-  font-size: 3.2rem;
-  font-weight: 600;
-  line-height: 4.4rem;
-  letter-spacing: 0;
-  text-align: left;
-  color: #172b4d;
-}
-
+ 
 .pop-up-technologies {
   display: flex;
   gap: 8px;
@@ -978,23 +993,7 @@ ul {
 .pop-up-technologies button {
   border-radius: 4px;
   padding: 8px 12px 8px 12px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.6rem;
   letter-spacing: 0.03em;
-  text-align: left;
-}
-
-.pop-up-description {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.pop-up-description p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.4rem;
   text-align: left;
 }
 
@@ -1055,6 +1054,35 @@ ul {
       right: 4.6%;
       cursor: pointer;
       
+  }
+  .pop-up-heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    letter-spacing: 0;
+    text-align: left;
+    color: #172b4d;
+  }
+  
+  .pop-up-technologies button {
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    
+  }
+  
+  .pop-up-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  
+  .pop-up-description p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: left;
   }
   .mobile-only{
     display: none;
