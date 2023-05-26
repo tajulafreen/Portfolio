@@ -183,7 +183,7 @@ ul {
 }
 
 .see-post {
-  margin: 30px 106px 24px 103px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -942,8 +942,32 @@ ul {
     right: 4.6%;
   }
 
+  .seelive {
+    height: 20px;
+    width: 10px;
+  }
+
+  .vector {
+    height: 20px;
+    width: 10px;
+  }
+
+  .pop-up-btn-box {
+    width: 120%;
+    margin-left: -35px;
+  }
+
   .mobile-only .btn span {
-    font-size: 14px;
+    font-size: 16px;
+    padding-left: -2px;
+  }
+
+  .btn--seelive {
+    width: 100px;
+  }
+
+  .btn--source {
+    width: 140px;
   }
 
   .pop-up-heading {
@@ -1018,17 +1042,16 @@ ul {
 
 .pop-up-btn-box {
   display: flex;
-  gap: 1.6rem;
+  gap: 1rem;
   justify-content: flex-end;
-  justify-items: center;
 }
 
 .btn {
   background-color: #36b37e;
   color: white;
-  height: 40px;
+  height: 60px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .btn span {

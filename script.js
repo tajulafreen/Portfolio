@@ -168,7 +168,7 @@ const createModal = (i) => {
           target="_blank"
         >
           <span>See Live</span>
-          <img src="./see live icon.png" alt="See live Icon" />
+          <img class="seelive" src="./see live icon.png" alt="See live Icon" />
         </button>
         <button
           class="btn btn--source"
@@ -176,7 +176,7 @@ const createModal = (i) => {
           href="https://tajulafreen.github.io/Portfolio/"
         >
           <span>See Source</span>
-          <img src="./Vector.png" alt="Github icon" />
+          <img class="vector" src="./Vector.png" alt="Github icon" />
         </button>
       </div>
     <div class="pop-up-technologies">
