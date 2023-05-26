@@ -227,11 +227,11 @@ const projectButtons = document.querySelectorAll('.see-post');
 for (let i = 0; i < projectButtons.length; i += 1) {
   projectButtons[i].addEventListener('click', () => { createModal(i); });
 }
+// -----Form-contact---//
 
 const contactForm = document.querySelector('.form-contact');
 
 const email = document.getElementById('user-mail');
-
 const error = document.querySelector('.error');
 const errormssg = '* The email address should be written in lower case.';
 
@@ -243,5 +243,32 @@ contactForm.addEventListener('submit', (e) => {
     error.innerText = errormssg;
   } else {
     error.innerText = 'succesfully';
+  }
+});
+
+/* -------------preserve data---------*/
+const username = document.getElementById('username');
+
+const message = document.getElementById('message');
+
+function savedata() {
+  const data = {
+    name: username.value,
+    mail: email.value,
+    mssg: message.value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(data));
+}
+
+username.addEventListener('input', savedata);
+email.addEventListener('input', savedata);
+message.addEventListener('input', savedata);
+
+window.addEventListener('load', () => {
+  const organiseddata = JSON.parse(localStorage.getItem('userInfo'));
+  if (organiseddata) {
+    username.value = organiseddata.name;
+    email.value = organiseddata.mail;
+    message.value = organiseddata.mssg;
   }
 });
