@@ -227,3 +227,21 @@ const projectButtons = document.querySelectorAll('.see-post');
 for (let i = 0; i < projectButtons.length; i += 1) {
   projectButtons[i].addEventListener('click', () => { createModal(i); });
 }
+
+const contactForm = document.querySelector('.form-contact');
+
+const email = document.getElementById('user-mail');
+
+const error = document.querySelector('.error');
+const errormssg = '* The email address should be written in lower case.';
+
+contactForm.addEventListener('submit', (e) => {
+  const flag = email.value.toLowerCase();
+
+  if (flag !== email.value) {
+    e.preventDefault();
+    error.innerText = errormssg;
+  } else {
+    error.innerText = 'succesfully';
+  }
+});
