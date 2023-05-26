@@ -595,6 +595,12 @@ ul {
     visibility: visible;
   }
 
+  .error {
+    color: rgb(142, 13, 13);
+    font-size: 20px;
+    margin: 30px 8%;
+  }
+
   .head-desktop-bg {
     background-image: url(./desktop-bg.png);
     background-size: 100%;
@@ -991,6 +997,12 @@ ul {
     font-weight: 400;
     line-height: 2rem;
     text-align: left;
+  }
+
+  .error {
+    color: rgb(142, 13, 13);
+    font-size: 18px;
+    margin: 30px 8%;
   }
 }
 
