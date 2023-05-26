@@ -153,23 +153,24 @@ ul {
 }
 
 .title {
-  margin: 16px 18px;
-  width: 295px;
-  height: 57px;
+  margin: 36px 10px;
+  width: 90%;
+  height: 46px;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 32px;
+  line-height: 26px;
   display: flex;
   align-items: center;
-  text-align: center;
   color: #3a4a42;
+  justify-content: center;
 }
 
 .tagcontainer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding-left: 5px;
   gap: 20px;
   width: 329px;
@@ -634,8 +635,8 @@ ul {
   .heading {
     font-weight: 600;
     width: 78%;
-    font-size: 34px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 34px;
     text-align: center;
     letter-spacing: -0.6px;
   }
@@ -681,7 +682,6 @@ ul {
 
   .title {
     width: 88%;
-    height: 57px;
   }
 
   .tagcontainer {
@@ -1084,9 +1084,9 @@ ul {
   }
 
   .pop-up-heading {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 600;
-    line-height: 4.4rem;
+    line-height: 3.4rem;
     letter-spacing: 0;
     text-align: left;
     color: #172b4d;
@@ -1105,7 +1105,7 @@ ul {
   }
 
   .pop-up-description p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.4rem;
     text-align: left;

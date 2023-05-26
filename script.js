@@ -20,7 +20,6 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   see.classList.remove('active');
   hider.classList.remove('active');
 }));
-
 const projectDetails = [
   {
     name: 'Keeping track of hundreds of components #1',
@@ -105,69 +104,126 @@ const projectDetails = [
       'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
   },
 ];
-
-// General Variables
-const projectButtons = document.querySelectorAll('.see-post');
+// Generate Cards Dynamically
+const projectContainer = document.querySelector('.grid-container');
+const createProject = (item) => {
+  const card = document.createElement('div');
+  card.classList = 'grid-item';
+  card.innerHTML = `
+    <div class="item image"></div> 
+           <h2 class="title">${item.name}</h2>          
+            <ul class="tagcontainer">
+            ${item.technologies.map((i) => `<li class="label-project">${i}</li>`).join('')}
+           </ul>
+           
+           <button class="see-post"><p class="see-button">see project</p></button>
+    `;
+  projectContainer.appendChild(card);
+};
+projectDetails.forEach((e) => {
+  createProject(e);
+});
 const overlay = document.querySelector('.overlay');
 const popUpWindow = document.querySelector('.pop-up');
-// const closePopUpBtn = document.querySelector('.pop-up-close-btn');
-// const livebtn = document.querySelector('.btn--seelive');
-// const sourcebtn = document.querySelector('.btn--source');
-// const body = document.querySelector('body');
+const body = document.querySelector('body');
 
-// Pop-up Variables
-// const projectName = document.querySelector('.pop-up-heading');
-// const description = document.querySelector('.pop-up-description');
-// const technologies = document.querySelector('.pop-up-technologies');
-// const deskbag = document.querySelector('.head-desktop-bg');
-// const mobbag = document.querySelector('.flexcontainer');
-// Functions
-// const showPopUp = () => {
-//   overlay.classList.toggle('hiddenn');
-//   deskbag.classList.toggle('hiddenn');
-//   mobbag.classList.toggle('hiddenn');
-//   popUpWindow.classList.remove('hidden');
-//   body.classList.add('hide-scroll');
-// };
+const deskbag = document.querySelector('.head-desktop-bg');
+const mobbag = document.querySelector('.flexcontainer');
+const showPopUp = () => {
+  overlay.classList.toggle('hiddenn');
+  deskbag.classList.toggle('hiddenn');
+  mobbag.classList.toggle('hiddenn');
+  popUpWindow.classList.remove('hidden');
+  body.classList.add('hide-scroll');
+};
+const createModal = (i) => {
+  const popUpWindow = document.querySelector('.pop-up');
 
-// const closePopUp = () => {
-//   overlay.classList.remove('hiddenn');
-//   deskbag.classList.remove('hiddenn');
-//   mobbag.classList.remove('hiddenn');
-//   popUpWindow.classList.add('hidden');
-//   body.classList.remove('hide-scroll');
-// };
+  popUpWindow.innerHTML = `
+      <img
+    src="./Disabled (2).png"
+    alt="Close btn"
+    class="pop-up-close-btn"
+  />
+    <div class="pop-up-img-box">
+     
+      <!-- For Mobile -->
+      <img
+        src="./pop-mobile.png"
+        alt="Backgroun image"
+        class="pop-up-hero-img mobile-only"
+      />
+      <!-- For Desktop -->
+      <img
+        src="./Snapshoot Portfolio (2).png"
+        alt="Backgroun image"
+        class="pop-up-hero-img desktop-only"
+      />
+    </div>
+    <h2 class="pop-up-heading">${projectDetails[i].name}</h2>
+    <div class="pop-up-btn-box desktop-only">
+        <button
+          class="btn btn--seelive"
+          href="https://tajulafreen.github.io/Portfolio/"
+          target="_blank"
+        >
+          <span>See Live</span>
+          <img src="./see live icon.png" alt="See live Icon" />
+        </button>
+        <button
+          class="btn btn--source"
+          target="_blank"
+          href="https://tajulafreen.github.io/Portfolio/"
+        >
+          <span>See Source</span>
+          <img src="./Vector.png" alt="Github icon" />
+        </button>
+      </div>
+    <div class="pop-up-technologies">
+    </div>
+    <div class="pop-up-description"><p>${projectDetails[i].description}</p></div>
+    <div class="pop-up-btn-box mobile-only">
+      <button
+        class="btn btn--seelive"
+        href="https://tajulafreen.github.io/Portfolio/"
+        target="_blank"
+      >
+        <span>See Live</span>
+        <img src="./see live icon.png" alt="See live Icon" />
+      </button>
+      <button
+        class="btn btn--source"
+        target="_blank"
+        href="https://tajulafreen.github.io/Portfolio/"
+      >
+        <span>See Source</span>
+        <img src="./Vector.png" alt="Github icon" />
+      </button>
+    </div>
+  `;
 
-// Actions
-// for (let i = 0; i < projectButtons.length; i += 1) {
-//   projectButtons[i].addEventListener('click', () => {
-//     const currentProject = projectDetails[i];
-//     const closePopUpBtn = document.createElement('img');
-//     // projectName.innerHTML = currentProject.name;
-//     // technologies.innerHTML = '';
-//     // description.innerHTML = '';
+  showPopUp();
+  const closePopUpBtn = document.querySelector('.pop-up-close-btn');
+  const closePopUp = () => {
+    overlay.classList.remove('hiddenn');
+    deskbag.classList.remove('hiddenn');
+    mobbag.classList.remove('hiddenn');
+    popUpWindow.classList.add('hidden');
+    body.classList.remove('hide-scroll');
+  };
+  closePopUpBtn.addEventListener('click', closePopUp);
+  const livebtn = document.querySelector('.btn--seelive');
+  const sourcebtn = document.querySelector('.btn--source');
 
-//     for (let n = 0; n < currentProject.technologies.length; n += 1) {
-//       const tech = document.createElement('button');
-//       tech.innerHTML = currentProject.technologies[n];
-//       technologies.append(tech);
-//     }
+  livebtn.addEventListener('click', () => {
+    window.open(projectDetails[i].live);
+  });
 
-//     for (let n = 0; n < currentProject.description.length; n += 1) {
-//       const para = document.createElement('p');
-//       para.innerHTML = currentProject.description[n];
-//       description.append(para);
-//     }
-
-//     showPopUp();
-//   });
-// }
-// closePopUpBtn.addEventListener('click', closePopUp);
-
-livebtn.addEventListener('click', () => {
-  window.open(projectDetails[0].live);
-});
-
-sourcebtn.addEventListener('click', () => {
-  window.open(projectDetails[0].source);
-});
+  sourcebtn.addEventListener('click', () => {
+    window.open(projectDetails[i].source);
+  });
+};
+const projectButtons = document.querySelectorAll('.see-post');
+for (let i = 0; i < projectButtons.length; i += 1) {
+  projectButtons[i].addEventListener('click', () => { createModal(i); });
+}
