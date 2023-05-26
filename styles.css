@@ -153,23 +153,24 @@ ul {
 }
 
 .title {
-  margin: 16px 18px;
-  width: 295px;
-  height: 57px;
+  margin: 36px 10px;
+  width: 90%;
+  height: 46px;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 32px;
+  line-height: 26px;
   display: flex;
   align-items: center;
-  text-align: center;
   color: #3a4a42;
+  justify-content: center;
 }
 
 .tagcontainer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding-left: 5px;
   gap: 20px;
   width: 329px;
@@ -182,7 +183,7 @@ ul {
 }
 
 .see-post {
-  margin: 30px 106px 24px 103px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -634,8 +635,8 @@ ul {
   .heading {
     font-weight: 600;
     width: 78%;
-    font-size: 34px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 34px;
     text-align: center;
     letter-spacing: -0.6px;
   }
@@ -681,7 +682,6 @@ ul {
 
   .title {
     width: 88%;
-    height: 57px;
   }
 
   .tagcontainer {
@@ -830,7 +830,7 @@ ul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -913,5 +913,228 @@ ul {
 
   .hamburger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .pop-up {
+    width: 70%;
+    top: 20%;
+    left: 30%;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+
+  .pop-up-btn-box.desktop-only {
+    display: none;
+  }
+
+  .pop-up-close-btn {
+    margin-right: -16px;
+    height: 2rem;
+    border-radius: 3px;
+    padding: 0;
+    position: absolute;
+    top: 1.3%;
+    right: 4.6%;
+  }
+
+  .seelive {
+    height: 20px;
+    width: 10px;
+  }
+
+  .vector {
+    height: 20px;
+    width: 10px;
+  }
+
+  .pop-up-btn-box {
+    width: 120%;
+    margin-left: -35px;
+  }
+
+  .mobile-only .btn span {
+    font-size: 16px;
+    padding-left: -2px;
+  }
+
+  .btn--seelive {
+    width: 100px;
+  }
+
+  .btn--source {
+    width: 140px;
+  }
+
+  .pop-up-heading {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .pop-up-technologies button {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .pop-up-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .pop-up-description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+  }
+}
+
+.pop-up {
+  scrollbar-gutter: stable;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 0.6rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 75vh;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.pop-up-img-box {
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+.pop-up-hero-img {
+  width: 100%;
+}
+
+.pop-up-close-btn {
+  cursor: pointer;
+  background-color: #ebecf0;
+  float: right;
+}
+
+.pop-up-technologies {
+  display: flex;
+  gap: 5px;
+}
+
+.pop-up-technologies button {
+  border-radius: 4px;
+  padding: 8px 12px 8px 12px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.pop-up-btn-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #36b37e;
+  color: white;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn span {
+  font-size: 22px;
+}
+
+.overlay.hiddenn {
+  background-image: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 60%);
+  backdrop-filter: blur(5px);
+  fill-opacity: inherit;
+}
+
+.head-desktop-bg.hiddenn {
+  display: none;
+}
+
+.flexcontainer.hiddenn {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .pop-up {
+    padding: 5rem 2rem 3rem;
+    gap: 1.6rem;
+  }
+
+  .pop-up-btn-box {
+    margin-top: -12%;
+  }
+
+  .pop-up-close-btn {
+    margin-right: -16px;
+    height: 2.4rem;
+    border-radius: 3px;
+    padding: 0;
+    position: absolute;
+    top: 5.3%;
+    right: 4.6%;
+  }
+
+  .pop-up-heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 3.4rem;
+    letter-spacing: 0;
+    text-align: left;
+    color: #172b4d;
+  }
+
+  .pop-up-technologies button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+  }
+
+  .pop-up-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .pop-up-description p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: left;
+  }
+
+  .mobile-only {
+    display: none;
   }
 }
