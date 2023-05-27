@@ -248,7 +248,6 @@ contactForm.addEventListener('submit', (e) => {
 
 /* -------------preserve data---------*/
 const username = document.getElementById('username');
-const message = document.getElementById('message');
 
 function savedata() {
   const data = {
