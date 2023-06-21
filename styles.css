@@ -51,7 +51,7 @@ body {
 .heading {
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 28px;
   text-align: center;
   padding: 25px 20px 10px;
 }
@@ -641,8 +641,8 @@ ul {
   .heading {
     font-weight: 600;
     width: 78%;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 30px;
+    line-height: 54px;
     text-align: center;
     letter-spacing: -0.6px;
   }
@@ -653,6 +653,7 @@ ul {
     font-weight: 200;
     font-size: 23px;
     line-height: 27px;
+    margin-top: 0;
   }
 
   .second {

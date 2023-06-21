@@ -22,17 +22,17 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 }));
 const projectDetails = [
   {
-    name: 'Keeping track of hundreds of components #1',
+    name: 'TO-DO-LIST',
     description: [
-      'This is the description of first project',
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+
+      'A to-do list is a simple and effective organizational tool used to keep track of tasks, activities, or goals that need to be accomplished within a certain timeframe. It serves as a visual representation of the work that needs to be completed, helping individuals prioritize and manage their time more efficiently.',
+      'To-do lists can be created using various mediums, such as paper and pen, electronic devices, or specialized productivity applications. Many digital tools offer additional features like due dates, reminders, and categorization options, which further enhance their functionality.',
     ],
-    image: './Snapshoot Portfolio (2).png',
+    image: './firstproject.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    live: 'https://tajulafreen.github.io/Portfolio/',
+    live: 'https://tajulafreen.github.io/To-Do-List/dist/',
     source:
-      'https://github.com/tajulafreen/Portfolio/blob/main/index.html',
+      'https://github.com/tajulafreen/To-Do-List/blob/main/src/index.html',
   },
   // Project #2
   {
@@ -42,7 +42,7 @@ const projectDetails = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     ],
-    image: 'i./Snapshoot Portfolio (2).png',
+    image: './Snapshoot Portfolio (2).png',
     technologies: ['HTML', 'CSS', 'Tailwind'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
@@ -69,7 +69,7 @@ const projectDetails = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     ],
-    image: 'i./Snapshoot Portfolio (2).png',
+    image: './Snapshoot Portfolio (2).png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://tajulafreen.github.io/Portfolio/',
     source:
@@ -155,7 +155,7 @@ const createModal = (i) => {
       />
       <!-- For Desktop -->
       <img
-        src="./Snapshoot Portfolio (2).png"
+        src="${projectDetails[i].image}"
         alt="Backgroun image"
         class="pop-up-hero-img desktop-only"
       />
