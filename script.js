@@ -149,7 +149,7 @@ const createModal = (i) => {
      
       <!-- For Mobile -->
       <img
-        src="./pop-mobile.png"
+        src="${projectDetails[i].image}"
         alt="Backgroun image"
         class="pop-up-hero-img mobile-only"
       />
